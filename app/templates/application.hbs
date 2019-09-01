@@ -1,41 +1,25 @@
-<div class="hero-wrapper">
-    <nav>
-        <img alt="Horizons Logo" />
-        <span class="left">
-            <button type="button" class="dark solid orange" id="try-now">Try Now</button>
-            <button type="button" class="dark empty" id="sign-in">Sign In</button>
-        </span>
-    </nav>
-    <section id="hero" class="dark">
-        <div>
-            <h1>Expand your horizons.</h1>
-            <p>
-                Stop settling for the same horizon day after day. Get out and explore the unknown. View sights unseen and travel to places unvisited.
-            </p>
-        </div>
-    </section>
+<nav>
+    <img alt="Horizons Logo" />
+    <span class="left">
+        <button type="button" class="dark solid orange" id="try-now">Try Now</button>
+        <button type="button" class="dark empty" id="sign-in">Sign In</button>
+    </span>
+</nav>
+<div class="content">
+    {{outlet}}
 </div>
-<section class="bg-orange dark">
-    <div class="preview-wrapper">
-        <div class="phone">
-
-        </div>
-        <div class="download-links">
-            <span id="app-store"></span>
-            <span id="play-store"></span>
-        </div>
-    </div>
-
-    <h1>
-        Find out more
-    </h1>
-    <form id="enquire-form">
-        <input type="text" name="full-name" placeholder="Full Name">
-        <input type="text" name="email-address" placeholder="Email Address">
-        <textarea name="" id="" cols="25" rows="10" placeholder="Message"></textarea>
-
-        <button type="submit" class="light white solid">Submit</button>
-    </form>
-</section>
-<section></section>
-<footer class="bg-orange"></footer>
+<footer class="bg-orange dark">
+    <span class="footer-left">
+        {{#link-to "index"}}Horzions{{/link-to}}
+    </span>
+    <span class="footer-right">
+        <ul>
+            <li>
+                {{#link-to "contact"}}Contact{{/link-to}}
+            </li>
+            <li>{{#link-to "terms"}}Terms and Conditions{{/link-to}}</li>
+            <li>{{#link-to "privacy"}}Privacy Policy{{/link-to}}</li>
+            <li>{{#link-to "about"}}About{{/link-to}}</li>
+        </ul>
+    </span>
+</footer>

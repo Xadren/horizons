@@ -1,8 +1,9 @@
 // Component Imports
-
+@import './index/index.scss';
 // Colours
 $orange: #f49e56;
 $transparent: rgba(0, 0, 0, 0);
+
 // Styles
 html,
 body {
@@ -12,15 +13,16 @@ body {
 
 body {
   font-family: "Lato", sans-serif;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   .ember-view {
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
   }
 }
 
 section {
-  padding: 0px 200px;
+  padding: 80px 200px;
 }
 
 .bg-orange {
@@ -31,29 +33,15 @@ h1 {
   font-size: 2.2em;
 }
 
-#hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  > div > p {
-    max-width: 450px;
-  }
-}
 
-.hero-wrapper {
-  position: relative;
-  overflow: hidden;
-  height: 570px;
-  background-image: url("/assets/images/hero.jpg");
-  background-size: cover;
-}
 
 button {
   border-radius: 24px;
   border: none;
   padding: 5px 20px 5px 20px;
-
+  font-size: 1em;
+  letter-spacing: 1px;
+  outline: none;
   :hover {
     cursor: pointer;
   }
@@ -78,6 +66,8 @@ button.empty {
 }
 
 nav {
+  position: fixed;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -96,9 +86,48 @@ textarea {
   font-size: 1.12em;
   display: block;
   margin: 5px 0px;
+  outline: none;
+}
+
+textarea {
+  height: initial;
+  padding: 3px 10px 3px 10px;
 }
 
 input[type="text"]::placeholder,
 textarea::placeholder {
   color: white;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  padding: 20px 200px;
+  // flex-shrink: 0;
+  .footer-left {
+    border-right: 1px solid white;
+    height: 100%;
+  }
+
+  .footer-right {
+    ul {
+      display: inline-block;
+      list-style: none;
+    }
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
 }

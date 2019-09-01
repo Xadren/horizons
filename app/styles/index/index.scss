@@ -1,0 +1,37 @@
+#hero {
+  > div > p {
+    max-width: 450px;
+  }
+}
+
+#hero {
+  position: relative;
+  overflow: hidden;
+  height: 452px;
+  background-image: url("/assets/images/hero.jpg");
+  background-size: cover;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote {
+  background-image: url("/assets/images/quote.jpg");
+  background-size: cover;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
