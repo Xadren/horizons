@@ -1,0 +1,28 @@
+// Colours
+$orange: #F49E56;
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-orange {
+    background-color: $orange;
+    color: white;
+}
+
+.hero-wrapper {
+    background-image: url('/assets/images/hero.jpg');
+    background-size: cover;
+    transform: scaleX(-1);
+    // background-position: 0% 10%;
+    height: 570px;
+}
+
+// .hero-wrapper > * {
+//     transform: scaleX(-1);
+// }
