@@ -34,6 +34,14 @@ form {
   color: white;
 }
 
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+
 html,
 body {
   margin: 0px;
@@ -100,7 +108,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 200px;
+  width: 100%;
 }
 
 input[type=text],
@@ -151,6 +159,33 @@ footer a {
 }
 footer a:visited {
   text-decoration: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+#hero > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.wrapper {
+  width: 45%;
+}
+
+footer > div {
+  display: inline-block;
+}
+
+.footer-right {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=horizons.css.map */
