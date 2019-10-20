@@ -69,7 +69,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 200px;
+  width: 100%;
 }
 
 input[type="text"],
@@ -103,7 +103,7 @@ textarea::placeholder {
 
 footer {
   padding: 20px 200px;
-  // flex-shrink: 0;
+
   .footer-left {
     border-right: 1px solid white;
     height: 100%;
@@ -128,4 +128,31 @@ footer {
     text-decoration: none;
   }
 
+}
+
+.logo {
+  width: 150px;
+}
+
+#hero > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.wrapper {
+  width: 45%;
+}
+
+footer > div {
+  display: inline-block;
+}
+
+.footer-right {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
