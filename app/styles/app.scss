@@ -1,5 +1,6 @@
 // Component Imports
-@import './index/index.scss';
+@import "./index/index.scss";
+@import "./about.scss";
 // Colours
 $orange: #f49e56;
 $transparent: rgba(0, 0, 0, 0);
@@ -63,9 +64,15 @@ button.empty {
   background-color: $transparent;
 }
 
+a > button:hover {
+  cursor: pointer;
+}
+
 nav {
-  position: fixed;
   z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,7 +112,6 @@ footer {
   padding: 20px 200px;
 
   .footer-left {
-    border-right: 1px solid white;
     height: 100%;
   }
 
@@ -127,7 +133,6 @@ footer {
   a:visited {
     text-decoration: none;
   }
-
 }
 
 .logo {
@@ -155,4 +160,24 @@ footer > div {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section {
+    padding: 0px 0px 0px 55px;
+  }
+
+  .left, footer {
+    padding: 20px 55px;
+  }
+
+  .previews {
+    padding: 50px 55px;
+  }
+
+  #hero {
+
+    background-image: url("/assets/images/hero_ipad.jpg");
+    background-size: cover;
+  }
 }
