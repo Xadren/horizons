@@ -1,5 +1,6 @@
 // Component Imports
 @import './index/index.scss';
+@import './about.scss';
 // Colours
 $orange: #f49e56;
 $transparent: rgba(0, 0, 0, 0);
@@ -63,9 +64,15 @@ button.empty {
   background-color: $transparent;
 }
 
+a > button:hover {
+  cursor: pointer;
+}
+
 nav {
-  position: fixed;
   z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,7 +112,6 @@ footer {
   padding: 20px 200px;
 
   .footer-left {
-    border-right: 1px solid white;
     height: 100%;
   }
 
