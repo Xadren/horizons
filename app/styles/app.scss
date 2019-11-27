@@ -106,6 +106,7 @@ textarea::placeholder {
 
 .content {
   flex: 1;
+  background-color: $orange;
 }
 
 footer {
@@ -162,6 +163,13 @@ footer > div {
   align-items: flex-start;
 }
 
+.proto-display {
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   section {
     padding: 0px 0px 0px 55px;
@@ -179,5 +187,9 @@ footer > div {
 
     background-image: url("/assets/images/hero_ipad.jpg");
     background-size: cover;
+  }
+
+  .proto-display {
+    min-height: 71vh;
   }
 }

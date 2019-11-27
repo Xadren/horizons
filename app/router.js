@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('terms');
   this.route('privacy');
   this.route('about');
+  this.route('proto');
 });
 
 export default Router;
